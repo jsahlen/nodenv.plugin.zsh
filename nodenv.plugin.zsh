@@ -2,7 +2,7 @@ FOUND_NODENV=0
 nodenvdirs=("$HOME/.nodenv"  "/usr/local/opt/nodenv" "/usr/local/nodenv" "/opt/nodenv")
 
 for nodenvdir in "${nodenvdirs[@]}" ; do
-  if [ -d $nodenvdir/bin -a $FOUND_NODENV -eq 0 ] ; then
+  if [ -d $nodenvdir/versions -a $FOUND_NODENV -eq 0 ] ; then
     FOUND_NODENV=1
     if [[ $NODENV_ROOT = '' ]]; then
       NODENV_ROOT=$nodenvdir
