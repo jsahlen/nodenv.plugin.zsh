@@ -1,5 +1,5 @@
 FOUND_NODENV=0
-nodenvdirs=("$HOME/.nodenv"  "/usr/local/opt/nodenv" "/usr/local/nodenv" "/opt/nodenv")
+nodenvdirs=("$HOME/.nodenv" "$HOME/.local/nodenv" "/usr/local/opt/nodenv" "/usr/local/nodenv" "/opt/nodenv")
 
 for nodenvdir in "${nodenvdirs[@]}" ; do
   if [ -d $nodenvdir/bin -a $FOUND_NODENV -eq 0 ] ; then
