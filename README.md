@@ -11,5 +11,5 @@ git clone https://github.com/jsahlen/nodenv.plugin.zsh ~/.oh-my-zsh/custom/plugi
 
 Add it in `.zshrc`:
 ```
-plugins=(... zsh-nodenv)
+plugins=(... nodenv)
 ```
